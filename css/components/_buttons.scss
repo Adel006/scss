@@ -1,0 +1,27 @@
+.btn {
+    border: none;
+    background-color: $main-color;
+    color: #fff;
+    width: 100px;
+    padding: 8px 15px;
+    cursor: pointer;
+    &:hover {
+        opacity: .7;
+    }
+}
+
+.toggler-btn {
+    position: absolute;
+    font-size: 24px;
+    background-color: $main-color;
+    padding: 5px 10px;
+    color: #fff;
+    right: 0;
+    top: 10px;
+    margin-right: 15px;
+    cursor: pointer;
+    display: none;
+    @include media($xsmall) {
+        display: block;
+    }
+}

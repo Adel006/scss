@@ -1,0 +1,56 @@
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid $second-color;
+    overflow: hidden;
+    .logo {
+        width: 30%;
+        float: $float-left;
+        @include media($xsmall) {
+            float: none;
+        }
+        h1{
+            margin: 0;
+        }
+        p {
+            font-size: 12px;
+            color: $third-color;
+        }
+    }
+    .navbar {
+        width: 70%;
+        float: $float-left;
+        background-color: $main-color;
+        @include media($xsmall) {
+            width: 100%;
+            float: none;
+            margin-top: 20px;
+            padding: 10px 0;
+            overflow: hidden;
+            display: none;
+        }
+        @include media($small) {
+            display: block !important;
+        }  
+        li {
+            width: 20%;
+            float: $float-left;
+            text-align: center;
+            @include media($xsmall) {
+                width: 100%;
+                text-align: left;
+            }
+            a {
+                color: #fff;
+                display: block;
+                padding: 20px 10px;   
+                &:hover {
+                    color: $third-color;
+                }
+                @include media($xsmall) {
+                    padding: 6px 10px;
+                }
+            }
+        }
+    
+    }
+}
