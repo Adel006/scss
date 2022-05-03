@@ -1,0 +1,26 @@
+.container {
+    max-width: 1200px;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.clear-fix {clear: both;}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mg-auto {margin: 10px auto;}
+
+.center-xs {
+    @include media($xsmall) {
+        text-align: center;
+    }
+}
+
+

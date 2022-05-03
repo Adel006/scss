@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif; }
+
+ul, ol {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+input, textarea {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+input:focus, textarea:focus {
+  border-color: red; }
+
+.special-heading {
+  position: relative;
+  margin: 20px 0;
+  text-align: center; }
+.special-heading h2 {
+  background-color: red;
+  color: #fff;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  display: inline-block; }
+@media (max-width: 767px) {
+  .special-heading h2 {
+    font-size: 16px; } }
+.special-heading h2::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  left: 0;
+  background-color: #b9b9b9;
+  z-index: -1; }
+
+.h3 {
+  position: relative;
+  display: inline-block; }
+.h3::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  top: 25px;
+  left: 0;
+  background-color: red; }
+
+.btn {
+  border: none;
+  background-color: red;
+  color: #fff;
+  width: 100px;
+  padding: 8px 15px;
+  cursor: pointer; }
+.btn:hover {
+  opacity: .7; }
+
+.toggler-btn {
+  position: absolute;
+  font-size: 24px;
+  background-color: red;
+  padding: 5px 10px;
+  color: #fff;
+  right: 0;
+  top: 10px;
+  margin-right: 15px;
+  cursor: pointer;
+  display: none; }
+@media (max-width: 767px) {
+  .toggler-btn {
+    display: block; } }
+
+.container {
+  max-width: 1200px;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.clear-fix {
+  clear: both; }
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.mg-auto {
+  margin: 10px auto; }
+
+@media (max-width: 767px) {
+  .center-xs {
+    text-align: center; } }
+
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid #b9b9b9;
+  overflow: hidden; }
+header .logo {
+  width: 30%;
+  float: left; }
+@media (max-width: 767px) {
+  header .logo {
+    float: none; } }
+header .logo h1 {
+  margin: 0; }
+header .logo p {
+  font-size: 12px;
+  color: #c8c8c8; }
+header .navbar {
+  width: 70%;
+  float: left;
+  background-color: red; }
+@media (max-width: 767px) {
+  header .navbar {
+    width: 100%;
+    float: none;
+    margin-top: 20px;
+    padding: 10px 0;
+    overflow: hidden;
+    display: none; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  header .navbar {
+    display: block !important; } }
+header .navbar li {
+  width: 20%;
+  float: left;
+  text-align: center; }
+@media (max-width: 767px) {
+  header .navbar li {
+    width: 100%;
+    text-align: left; } }
+header .navbar li a {
+  color: #fff;
+  display: block;
+  padding: 20px 10px; }
+header .navbar li a:hover {
+  color: #c8c8c8; }
+@media (max-width: 767px) {
+  header .navbar li a {
+    padding: 6px 10px; } }
+
+footer {
+  padding-top: 30px;
+  margin-top: 50px;
+  background-color: #eeeeee;
+  overflow: hidden; }
+footer .footer-up .galleries, footer .footer-up .company, footer .footer-up .contact {
+  width: 380px; }
+footer .galleries h3, footer .company h3, footer .contact h3 {
+  margin-bottom: 20px; }
+footer .galleries .gallery {
+  margin-bottom: 5px;
+  overflow: hidden; }
+footer .galleries .gallery .gallery-image {
+  width: 30%;
+  float: left; }
+@media (max-width: 767px) {
+  footer .galleries .gallery .gallery-image {
+    width: 100%; } }
+footer .galleries .gallery .gallery-image img {
+  max-width: 100%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: red; }
+footer .galleries .gallery .gallery-infos {
+  width: 70%;
+  float: left;
+  padding-left: 10px; }
+@media (max-width: 767px) {
+  footer .galleries .gallery .gallery-infos {
+    width: 100%; } }
+footer .galleries .gallery .gallery-infos h4 {
+  color: red;
+  margin-top: 20px; }
+footer .galleries .gallery .gallery-infos p {
+  font-size: 14px;
+  color: #b9b9b9;
+  line-height: 1.5;
+  margin-top: 5px; }
+footer .company p {
+  font-size: 14px;
+  color: #b9b9b9;
+  margin-top: 10px; }
+footer .company p span {
+  color: red; }
+footer .contact input[type='text'], footer .contact input[type='email'], footer .contact textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px; }
+footer .contact textarea {
+  height: 100px;
+  resize: none; }
+
+/*--------------------start slider --------------------*/
+.slider {
+  padding: 20px 0; }
+.slider p {
+  color: #b9b9b9;
+  text-align: center;
+  line-height: 1.5; }
+.slider img {
+  max-width: 100%;
+  margin: 20px 0; }
+@media (max-width: 767px) {
+  .slider img {
+    margin-bottom: 5px; } }
+.slider .bullets {
+  text-align: center; }
+.slider .bullets li {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-color: #b9b9b9;
+  border: 2px solid #b9b9b9;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer; }
+.slider .bullets li.active, .slider .bullets li:hover {
+  background-color: #fff;
+  border-color: #000; }
+@media (max-width: 767px) {
+  .slider .bullets li {
+    width: 10px;
+    height: 10px; } }
+
+/*--------------------end slider--------------------*/
+/*--------------------start services--------------------*/
+.services .services-up .service-box {
+  width: 380px; }
+@media (max-width: 767px) {
+  .services .services-up .service-box {
+    text-align: center; } }
+.services .services-up .service-box .service-title {
+  margin-bottom: 5px; }
+.services .services-up .service-box .service-title .fa {
+  font-size: 30px;
+  margin-right: 10px; }
+.services .services-up .service-box .service-description {
+  color: #b9b9b9;
+  line-height: 1.5;
+  font-size: 14px; }
+.services .services-up .service-box .service-link {
+  display: inline-block;
+  margin-top: 5px;
+  color: red; }
+.services .services-up .service-box .service-link:hover {
+  color: #c8c8c8; }
+
+/*--------------------end services--------------------*/
+/*--------------------start players--------------------*/
+.players .players-up .player-box {
+  width: 230px; }
+.players .players-up .player-box img {
+  max-width: 100%; }
+.players .players-up .player-box .player-title {
+  margin: 5px 0; }
+.players .players-up .player-box .player-title span {
+  font-weight: bold; }
+.players .players-up .player-box .player-description {
+  color: #b9b9b9;
+  line-height: 1.5;
+  font-size: 14px; }
+.players .players-up .player-box .player-link {
+  display: inline-block;
+  margin-top: 5px;
+  color: red; }
+.players .players-up .player-box .player-link:hover {
+  color: #c8c8c8; }
+
+/*--------------------end players--------------------*/
+/*--------------------start projects--------------------*/
+.projects .projects-up .project-box {
+  position: relative;
+  width: 380px; }
+.projects .projects-up .project-box:hover .project-title {
+  height: 50px; }
+.projects .projects-up .project-box .project-title {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+.projects .projects-up .project-box img {
+  max-width: 100%;
+  cursor: pointer; }
+
+/*--------------------end projects--------------------*/
+/*--------------------start copyright--------------------*/
+.copyright {
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  border-top: 1px solid #c8c8c8; }
+.copyright .copyright-year {
+  width: 200px;
+  float: left; }
+.copyright .copyright-author {
+  width: 200px;
+  float: right;
+  text-align: right; }
+.copyright .copyright-author span .fa {
+  color: red; }
+
+/*--------------------end copyright--------------------*/
+
+/*# sourceMappingURL=main.css.map */
