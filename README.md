@@ -1,3 +1,3 @@
 # sass
 
-This is a very simple template created with html and sass. It was all about practicing sass and get familiar with it.
+This is a very simple template created with sass. It was all about practicing it and get familiar with it.
